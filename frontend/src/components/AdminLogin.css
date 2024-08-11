@@ -1,0 +1,71 @@
+/* Admin Login Page */
+.admin-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+  }
+  
+  .admin-login h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .admin-login input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid var(--button-bg-color);
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+  }
+  
+  .admin-login input:focus {
+    border-color: var(--button-hover-bg-color);
+  }
+  
+  .admin-login button {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+  }
+  
+  .admin-login button:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: scale(1.05);
+  }
+  
+  .admin-login .error-message {
+    color: var(--error-color);
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

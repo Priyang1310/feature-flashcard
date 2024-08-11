@@ -1,0 +1,45 @@
+/* Role Selection Page */
+.role-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .role-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: scale(1.05);
+  }
+  
