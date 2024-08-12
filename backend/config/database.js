@@ -1,15 +1,16 @@
-const mysql = require('mysql2/promise');
+const mysql = require('mysql2');
 
 const pool = mysql.createPool({
-  host: 'http://sql12.freesqldatabase.com/',
-  user: 'sql12725420',
-  password: 'L68yrVi1S2',
-  database: 'sql12725420',
-  port:3306
+  host: 'bbymsisrahv61qxoiqey-mysql.services.clever-cloud.com',
+  user: 'usrlc3u67vv3yjl8',
+  password: 'sYNLNJzdouh6vCu4GtnJ',
+  database: 'bbymsisrahv61qxoiqey',
+  waitForConnections:true
 });
-const sequelize = new Sequelize('flashcard_db', 'flashcard_user', 'your_password', {
-  host: 'mysql-2e66b442-consistentcoderpriyangdesai-7606.k.aivencloud.com',
-  dialect: 'mysql',
-});
+
+pool.getConnection((err,conn)=>{
+  if(err)console.log(err);
+  console.log("MySQL Connected Successfully!");
+})
 
 module.exports = pool;
