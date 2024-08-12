@@ -13,7 +13,7 @@ const UserFlashcards = ({ isDarkTheme }) => {
   }, []);
 
   const fetchFlashcards = async () => {
-    const response = await axios.get("http://localhost:5000/api/flashcards");
+    const response = await axios.get("https://feature-flashcard.vercel.app/api/flashcards");
     setFlashcards(response.data);
   };
 

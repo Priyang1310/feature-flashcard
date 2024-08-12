@@ -11,12 +11,12 @@ const AdminDashboard = ({isDarkTheme}) => {
   }, []);
 
   const fetchFlashcards = async () => {
-    const response = await axios.get('http://localhost:5000/api/flashcards');
+    const response = await axios.get('https://feature-flashcard.vercel.app/api/flashcards');
     setFlashcards(response.data);
   };
 
   const addFlashcard = async () => {
-    await axios.post('http://localhost:5000/api/flashcards', {
+    await axios.post('https://feature-flashcard.vercel.app/api/flashcards', {
       question,
       answer,
     });
@@ -26,7 +26,7 @@ const AdminDashboard = ({isDarkTheme}) => {
   };
   
   const deleteFlashcard = async (id) => {
-    await axios.delete(`http://localhost:5000/api/flashcards/${id}`);
+    await axios.delete(`https://feature-flashcard.vercel.app/api/flashcards/${id}`);
     fetchFlashcards();
   };
   
@@ -35,7 +35,7 @@ const AdminDashboard = ({isDarkTheme}) => {
     const newAnswer = prompt('Enter new answer:', answer);
     
     if (newQuestion && newAnswer) {
-      await axios.put(`http://localhost:5000/api/flashcards/${id}`, {
+      await axios.put(`https://feature-flashcard.vercel.app/api/flashcards/${id}`, {
         question: newQuestion,
         answer: newAnswer,
       });

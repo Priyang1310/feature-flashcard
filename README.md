@@ -75,4 +75,9 @@ In the project directory, you can run:
 - **`npm test`**: Launches the test runner.
 - **`npm run eject`**: Removes the single build dependency from your project.
 
+### Deployment
+
+frontend and backend server are deployed on vercel. 
+You can access the website through : https://flashcardfeature-fbz6yhffr-priyang1310s-projects.vercel.app/
+
 # Thank you for viewing this project
